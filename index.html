@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Web Development Portfolio - Rahul Kumar. Creating high-performance websites that help businesses grow.">
+    <meta name="keywords" content="web developer, portfolio, freelancer, web design, web development">
+    <meta name="author" content="Rahul Kumar">
+    <meta name="theme-color" content="#36E58E">
+    <title>Rahul Kumar - Professional Web Developer & Freelancer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body class="dark-mode bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar-scroll fixed w-full bg-dark bg-opacity-90">
+        <div class="container-custom py-4 flex items-center justify-between">
+            <a href="/" class="text-2xl font-bold text-gradient">RK</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                <a href="projects.html" class="hover:text-primary transition-colors">Projects</a>
+                <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+                <a href="process.html" class="hover:text-primary transition-colors">Process</a>
+            </div>
+
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                <i class="fas fa-moon text-primary"></i>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-toggle" class="md:hidden p-2">
+                <i class="fas fa-bars text-primary text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-gray border-t border-primary border-opacity-20">
+            <div class="container-custom py-4 flex flex-col space-y-4">
+                <a href="#" class="hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="hover:text-primary transition-colors">About</a>
+                <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+                <a href="projects.html" class="hover:text-primary transition-colors">Projects</a>
+                <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-content hero-gradient pt-24 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl"></div>
+            <div class="absolute top-40 right-10 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-3xl animation-delay-2000"></div>
+        </div>
+
+        <div class="container-custom relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-left" data-animate>
+                    <h1 class="hero-title text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Building Modern Websites That Help Businesses <span class="text-gradient">Grow</span>
+                    </h1>
+                    <p class="hero-subtitle text-xl text-gray-300 mb-8 leading-relaxed">
+                        I create high-performance websites that help businesses attract customers, build trust, and increase revenue. 
+                        With expertise in modern tech stacks and proven conversion strategies.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 hero-cta">
+                        <a href="projects.html" class="btn-primary text-center">View My Work</a>
+                        <a href="contact.html" class="btn-secondary text-center">Start Your Project</a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="mt-12 grid grid-cols-3 gap-6 pt-12 border-t border-primary border-opacity-20">
+                        <div class="text-center" data-animate>
+                            <div class="text-4xl font-bold text-primary mb-2" data-counter="50" data-suffix="+">0</div>
+                            <p class="text-gray-400 text-sm">Projects Completed</p>
+                        </div>
+                        <div class="text-center" data-animate>
+                            <div class="text-4xl font-bold text-primary mb-2" data-counter="40" data-suffix="+">0</div>
+                            <p class="text-gray-400 text-sm">Happy Clients</p>
+                        </div>
+                        <div class="text-center" data-animate>
+                            <div class="text-4xl font-bold text-primary mb-2" data-counter="5" data-suffix="y">0</div>
+                            <p class="text-gray-400 text-sm">Experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Visual Element -->
+                <div class="hidden md:block relative" data-animate>
+                    <div class="glass-morphism p-8 rounded-3xl float-animation">
+                        <div class="bg-gradient-to-br from-primary to-accent rounded-2xl h-80 flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-code text-white text-6xl mb-4"></i>
+                                <p class="text-white font-semibold">Premium Web Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section-pad bg-dark-gray relative">
+        <div class="container-custom">
+            <div class="text-center mb-16" data-animate>
+                <span class="text-primary font-semibold">FEATURED WORK</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+                    Projects That Drive <span class="text-gradient">Results</span>
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Crafted solutions that combine stunning design with powerful functionality
+                </p>
+            </div>
+
+            <div class="grid-responsive" id="featured-projects">
+                <!-- Project 1 -->
+                <div class="card-glass card-hover group" data-animate>
+                    <div class="bg-gradient-to-br from-primary to-accent rounded-xl h-48 mb-4 flex items-center justify-center group-hover:shadow-lg transition-all">
+                        <i class="fas fa-building text-white text-4xl opacity-50"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Construction Company Website</h3>
+                    <p class="text-gray-300 mb-4">Modern website showcasing projects and services with lead generation forms</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full">React</span>
+                        <span class="text-xs bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full">Tailwind</span>
+                    </div>
+                    <p class="text-accent font-semibold text-sm mb-4">+45% Lead Increase</p>
+                    <a href="project-detail.html?id=1" class="text-primary font-semibold hover:text-accent transition-colors inline-flex items-center gap-2">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card-glass card-hover group" data-animate>
+                    <div class="bg-gradient-to-br from-accent to-primary rounded-xl h-48 mb-4 flex items-center justify-center group-hover:shadow-lg transition-all">
+                        <i class="fas fa-home text-white text-4xl opacity-50"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Real Estate Platform</h3>
+                    <p class="text-gray-300 mb-4">Advanced property listing platform with virtual tours and booking system</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full">Next.js</span>
+                        <span class="text-xs bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full">MongoDB</span>
+                    </div>
+                    <p class="text-accent font-semibold text-sm mb-4">10k+ Monthly Users</p>
+                    <a href="project-detail.html?id=2" class="text-primary font-semibold hover:text-accent transition-colors inline-flex items-center gap-2">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card-glass card-hover group" data-animate>
+                    <div class="bg-gradient-to-br from-primary to-accent rounded-xl h-48 mb-4 flex items-center justify-center group-hover:shadow-lg transition-all">
+                        <i class="fas fa-book text-white text-4xl opacity-50"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">School ERP System</h3>
+                    <p class="text-gray-300 mb-4">Complete educational management system with student, parent, and teacher portals</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full">Vue.js</span>
+                        <span class="text-xs bg-primary bg-opacity-20 text-primary px-3 py-1 rounded-full">Firebase</span>
+                    </div>
+                    <p class="text-accent font-semibold text-sm mb-4">5000+ Students</p>
+                    <a href="project-detail.html?id=3" class="text-primary font-semibold hover:text-accent transition-colors inline-flex items-center gap-2">
+                        View Case Study <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="projects.html" class="btn-primary inline-block">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section-pad bg-dark relative">
+        <div class="container-custom">
+            <div class="text-center mb-16" data-animate>
+                <span class="text-primary font-semibold">WHAT I OFFER</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+                    Services Designed for Your <span class="text-gradient">Success</span>
+                </h2>
+            </div>
+
+            <div class="grid-responsive-lg">
+                <!-- Service 1 -->
+                <div class="card-glass card-hover p-8 text-center" data-animate>
+                    <div class="text-5xl text-primary mb-4 inline-block">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Business Websites</h3>
+                    <p class="text-gray-300">Professional websites that showcase your business and attract customers</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card-glass card-hover p-8 text-center" data-animate>
+                    <div class="text-5xl text-primary mb-4 inline-block">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Portfolio Websites</h3>
+                    <p class="text-gray-300">Stunning portfolio sites that showcase your work and skills effectively</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card-glass card-hover p-8 text-center" data-animate>
+                    <div class="text-5xl text-primary mb-4 inline-block">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Landing Pages</h3>
+                    <p class="text-gray-300">High-converting landing pages designed to maximize your sales and leads</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card-glass card-hover p-8 text-center" data-animate>
+                    <div class="text-5xl text-primary mb-4 inline-block">
+                        <i class="fas fa-refresh"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Website Redesign</h3>
+                    <p class="text-gray-300">Modernize your existing website with contemporary design and functionality</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="card-glass card-hover p-8 text-center" data-animate>
+                    <div class="text-5xl text-primary mb-4 inline-block">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">SEO Optimization</h3>
+                    <p class="text-gray-300">Drive organic traffic with SEO-optimized websites that rank higher</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="card-glass card-hover p-8 text-center" data-animate>
+                    <div class="text-5xl text-primary mb-4 inline-block">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Maintenance & Support</h3>
+                    <p class="text-gray-300">Ongoing support to keep your website running smoothly and secure</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html" class="btn-secondary inline-block">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section class="section-pad bg-dark-gray">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-animate>
+                    <span class="text-primary font-semibold">WHY CHOOSE ME</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8">
+                        I Bring <span class="text-gradient">Results</span> That Matter
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="text-primary text-2xl flex-shrink-0 pt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Fast Delivery</h4>
+                                <p class="text-gray-300">Projects delivered on time, every time, without compromising quality</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-primary text-2xl flex-shrink-0 pt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Professional Communication</h4>
+                                <p class="text-gray-300">Clear updates and regular communication throughout your project</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-primary text-2xl flex-shrink-0 pt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Responsive Design</h4>
+                                <p class="text-gray-300">Mobile-first approach ensuring perfect experience on all devices</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-primary text-2xl flex-shrink-0 pt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">SEO Friendly</h4>
+                                <p class="text-gray-300">Optimized for search engines to help you rank higher and get more traffic</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-primary text-2xl flex-shrink-0 pt-1">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Long-Term Support</h4>
+                                <p class="text-gray-300">Ongoing support and maintenance to keep your site secure and fast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4" data-animate>
+                    <div class="glass-morphism p-6 rounded-xl">
+                        <h4 class="font-bold text-lg mb-3 text-primary">Web Development</h4>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="glass-morphism p-6 rounded-xl">
+                        <h4 class="font-bold text-lg mb-3 text-primary">UI/UX Design</h4>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="glass-morphism p-6 rounded-xl">
+                        <h4 class="font-bold text-lg mb-3 text-primary">SEO Optimization</h4>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="glass-morphism p-6 rounded-xl">
+                        <h4 class="font-bold text-lg mb-3 text-primary">Performance Optimization</h4>
+                        <div class="w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-accent h-2 rounded-full" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="section-pad bg-dark">
+        <div class="container-custom">
+            <div class="text-center mb-16" data-animate>
+                <span class="text-primary font-semibold">CLIENT TESTIMONIALS</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-6">
+                    What My Clients <span class="text-gradient">Say</span>
+                </h2>
+            </div>
+
+            <!-- Swiper for Testimonials -->
+            <div class="swiper" id="testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="card-glass p-8 rounded-2xl h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                                    <span class="font-bold">RJ</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Rajesh Jain</h4>
+                                    <p class="text-gray-400 text-sm">CEO, BuildTech Solutions</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                "Rahul transformed our online presence completely. The website he built is not only beautiful but has increased our leads by 60%. Highly recommended!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="card-glass p-8 rounded-2xl h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                                    <span class="font-bold">SP</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Shilpa Patel</h4>
+                                    <p class="text-gray-400 text-sm">Founder, PropertyMax</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                "The attention to detail and professionalism was outstanding. Our new real estate platform is exactly what we envisioned. Great work!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="card-glass p-8 rounded-2xl h-full">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
+                                    <span class="font-bold">AM</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Amit Mehta</h4>
+                                    <p class="text-gray-400 text-sm">Principal, Delhi Academy</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-1 mb-4">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                            <p class="text-gray-300 leading-relaxed">
+                                "Our school management system is running flawlessly. The support team is incredibly responsive and helpful. Truly professional!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev text-primary"></div>
+                <div class="swiper-button-next text-primary"></div>
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="testimonials.html" class="btn-primary inline-block">Read More Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-pad bg-gradient-to-r from-primary to-accent relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-dark rounded-full mix-blend-multiply filter blur-3xl"></div>
+        </div>
+
+        <div class="container-custom relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-dark mb-6" data-animate>
+                Ready to Grow Your Business Online?
+            </h2>
+            <p class="text-xl text-dark-gray mb-8 max-w-2xl mx-auto" data-animate>
+                Let's create something amazing together. Get in touch today and let's discuss your project.
+            </p>
+            <a href="contact.html" class="btn-dark inline-block" data-animate>Get In Touch Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray border-t border-primary border-opacity-10 py-16">
+        <div class="container-custom mb-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gradient mb-4">Rahul Kumar</h3>
+                    <p class="text-gray-400">Professional Web Developer creating premium digital solutions</p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                            <i class="fab fa-linkedin text-primary"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                            <i class="fab fa-github text-primary"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                            <i class="fab fa-twitter text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="services.html" class="hover:text-primary transition-colors">Web Development</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition-colors">Web Design</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition-colors">SEO Optimization</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition-colors">Maintenance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-primary transition-colors">Projects</a></li>
+                        <li><a href="process.html" class="hover:text-primary transition-colors">My Process</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold mb-4">Get In Touch</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex gap-3">
+                            <i class="fas fa-envelope text-primary flex-shrink-0 pt-1"></i>
+                            <a href="mailto:webcoder9034@gmail.com"
+                                class="hover:text-primary transition-colors">webcoder9034@gmail.com</a>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-phone text-primary flex-shrink-0 pt-1"></i>
+                            <a href="tel:+919876543210" class="hover:text-primary transition-colors">+91 70564 50305</a>
+                        </li>
+                         <li class="flex gap-3">
+                            <i class="fab fa-whatsapp text-primary flex-shrink-0 pt-1"></i>
+                            <a href="https://wa.me/917056450305" class="hover:text-primary transition-colors">WhatsApp</a>
+                        </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt text-primary flex-shrink-0 pt-1"></i>
+                            <span>Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-primary border-opacity-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
+                <p>&copy; 2024 Rahul Kumar. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/swiper-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
