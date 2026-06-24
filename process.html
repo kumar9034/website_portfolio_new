@@ -13,7 +13,7 @@
     <!-- Navbar -->
     <nav class="navbar-scroll fixed w-full bg-dark bg-opacity-90">
         <div class="container-custom py-4 flex items-center justify-between">
-            <a href="index.html" class="text-2xl font-bold text-gradient">RK</a>
+            <a href="index.html" class="text-2xl font-bold text-gradient"><img class="w-20 h-auto" src="images/logo.png" alt=""></a>
             <div class="hidden md:flex space-x-8">
                 <a href="index.html" class="hover:text-primary transition-colors">Home</a>
                 <a href="about.html" class="hover:text-primary transition-colors">About</a>
@@ -22,10 +22,10 @@
                 <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
                 <a href="process.html" class="hover:text-primary transition-colors">Process</a>
             </div>
-            <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-800">
+            <button type="button" id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-800" aria-label="Toggle theme">
                 <i class="fas fa-moon text-primary"></i>
             </button>
-            <button id="mobile-menu-toggle" class="md:hidden p-2">
+            <button type="button" id="mobile-menu-toggle" class="md:hidden p-2" aria-label="Toggle mobile menu">
                 <i class="fas fa-bars text-primary text-xl"></i>
             </button>
         </div>
@@ -36,6 +36,7 @@
                 <a href="services.html" class="hover:text-primary transition-colors">Services</a>
                 <a href="projects.html" class="hover:text-primary transition-colors">Projects</a>
                 <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+                <a href="process.html" class="hover:text-primary transition-colors">Process</a>
             </div>
         </div>
     </nav>
@@ -58,13 +59,8 @@
             <!-- Step 1 -->
             <div class="mb-20 grid md:grid-cols-2 gap-12 items-center" data-animate>
                 <div class="order-2 md:order-1">
-                    <div class="glass-morphism p-8 rounded-3xl">
-                        <div class="bg-gradient-to-br from-primary to-accent rounded-2xl h-80 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="text-7xl font-bold text-dark mb-2">1</div>
-                                <p class="text-white font-semibold">Discovery</p>
-                            </div>
-                        </div>
+                    <div class="glass-morphism rounded-3xl">
+                        <img class="rounded-3xl w-full" src="images/image-1.png" alt="">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
@@ -96,13 +92,8 @@
                     </ul>
                 </div>
                 <div>
-                    <div class="glass-morphism p-8 rounded-3xl">
-                        <div class="bg-gradient-to-br from-accent to-primary rounded-2xl h-80 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="text-7xl font-bold text-dark mb-2">2</div>
-                                <p class="text-white font-semibold">Design</p>
-                            </div>
-                        </div>
+                    <div class="glass-morphism  rounded-3xl">
+                        <img class="rounded-3xl w-full" src="images/image-2.png" alt="">
                     </div>
                 </div>
             </div>
@@ -110,13 +101,8 @@
             <!-- Step 3 -->
             <div class="mb-20 grid md:grid-cols-2 gap-12 items-center" data-animate>
                 <div class="order-2 md:order-1">
-                    <div class="glass-morphism p-8 rounded-3xl">
-                        <div class="bg-gradient-to-br from-primary to-accent rounded-2xl h-80 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="text-7xl font-bold text-dark mb-2">3</div>
-                                <p class="text-white font-semibold">Development</p>
-                            </div>
-                        </div>
+                    <div class="glass-morphism  rounded-3xl">
+                        <img class="rounded-3xl w-full" src="images/image-3.png" alt="">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
@@ -148,13 +134,8 @@
                     </ul>
                 </div>
                 <div>
-                    <div class="glass-morphism p-8 rounded-3xl">
-                        <div class="bg-gradient-to-br from-accent to-primary rounded-2xl h-80 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="text-7xl font-bold text-dark mb-2">4</div>
-                                <p class="text-white font-semibold">Testing</p>
-                            </div>
-                        </div>
+                    <div class="glass-morphism  rounded-3xl">
+                       <img class="rounded-3xl w-full" src="images/image-4.png" alt="">
                     </div>
                 </div>
             </div>
@@ -162,13 +143,8 @@
             <!-- Step 5 -->
             <div class="grid md:grid-cols-2 gap-12 items-center" data-animate>
                 <div class="order-2 md:order-1">
-                    <div class="glass-morphism p-8 rounded-3xl">
-                        <div class="bg-gradient-to-br from-primary to-accent rounded-2xl h-80 flex items-center justify-center">
-                            <div class="text-center">
-                                <div class="text-7xl font-bold text-dark mb-2">5</div>
-                                <p class="text-white font-semibold">Launch</p>
-                            </div>
-                        </div>
+                    <div class="glass-morphism  rounded-3xl">
+                        <img class="rounded-3xl w-full" src="images/image-5.png" alt="">
                     </div>
                 </div>
                 <div class="order-1 md:order-2">
@@ -297,13 +273,29 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark-gray border-t border-primary border-opacity-10 py-16">
-        <div class="container-custom mb-12">
-            <div class="grid md:grid-cols-4 gap-8 mb-12">
+  <footer class=" h-auto bg-dark-gray border-t border-primary border-opacity-10 ">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-4 gap-8 py-16">
+                <!-- Brand -->
                 <div>
-                    <h3 class="text-2xl font-bold text-gradient mb-4">Rahul Kumar</h3>
-                    <p class="text-gray-400">Premium web development solutions for your business</p>
+                    <div class="">
+                        <img class="w-20 h-auto" src="images/logo.png" alt="">
+                    </div>
+                    <p class="text-gray-400">Professional Web Developer creating premium digital solutions</p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                            <i class="fab fa-linkedin text-primary"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                            <i class="fab fa-github text-primary"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary bg-opacity-20 rounded-lg flex items-center justify-center hover:bg-opacity-30 transition-all">
+                            <i class="fab fa-twitter text-primary"></i>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Services -->
                 <div>
                     <h4 class="font-bold mb-4">Services</h4>
                     <ul class="space-y-2 text-gray-400">
@@ -313,20 +305,23 @@
                         <li><a href="services.html" class="hover:text-primary transition-colors">Maintenance</a></li>
                     </ul>
                 </div>
+
+                <!-- Quick Links -->
                 <div>
                     <h4 class="font-bold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
-                        <li><a href="about.html" class="hover:text-primary transition-colors">About</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Me</a></li>
                         <li><a href="projects.html" class="hover:text-primary transition-colors">Projects</a></li>
+                        <li><a href="process.html" class="hover:text-primary transition-colors">My Process</a></li>
                         <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
-                        <li><a href="process.html" class="hover:text-primary transition-colors">Process</a></li>
                     </ul>
                 </div>
+
+                <!-- Contact -->
                 <div>
                     <h4 class="font-bold mb-4">Get In Touch</h4>
                     <ul class="space-y-3 text-gray-400">
-                          <li class="flex gap-3">
+                        <li class="flex gap-3">
                             <i class="fas fa-envelope text-primary flex-shrink-0 pt-1"></i>
                             <a href="mailto:webcoder9034@gmail.com"
                                 class="hover:text-primary transition-colors">webcoder9034@gmail.com</a>
@@ -339,14 +334,20 @@
                             <i class="fab fa-whatsapp text-primary flex-shrink-0 pt-1"></i>
                             <a href="https://wa.me/917056450305" class="hover:text-primary transition-colors">WhatsApp</a>
                         </li>
+                        <li class="flex gap-3">
+                            <i class="fas fa-map-marker-alt text-primary flex-shrink-0 pt-1"></i>
+                            <span>Delhi, India</span>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-primary border-opacity-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-primary border-opacity-10 py-3 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
                 <p>&copy; 2024 Rahul Kumar. All rights reserved.</p>
                 <div class="flex gap-6">
-                    <a href="#" class="hover:text-primary transition-colors">Privacy</a>
-                    <a href="#" class="hover:text-primary transition-colors">Terms</a>
+                    <a href="#" class="hover:text-primary transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-primary transition-colors">Terms of Service</a>
                 </div>
             </div>
         </div>
