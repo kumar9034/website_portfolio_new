@@ -170,3 +170,53 @@ function reinitializeAnimations() {
 // Export for use in other modules
 window.gsapAnimations = gsapAnimations;
 window.reinitializeAnimations = reinitializeAnimations;
+
+// EmailJS Initialization
+emailjs.init("YOUR_PUBLIC_KEY");
+
+// Contact Form Submit
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const submitBtn = contactForm.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    emailjs.sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        "#contact-form"
+    )
+    .then(function () {
+
+        alert("✅ Message sent successfully!");
+
+        contactForm.reset();
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+    })
+    .catch(function (error) {
+
+        console.error(error);
+
+        alert("❌ Failed to send message. Please try again.");
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+
+    });
+
+});
+
+
+
+
+
+// service_26rwidj
+// template_32ifp21
+
+// iWsXv6gFNxSm2K2KP
