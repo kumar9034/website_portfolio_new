@@ -1340,16 +1340,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes marqueeReverse {
-    0%{
+    0% {
         transform: translateX(0%);
     }
-    100%{
+    100% {
         transform: translateX(-100%);
     }
 }
 
-.animate-marquee-reverse{
-    animation: marqueeReverse 10s linear infinite;
+.animate-marquee-reverse {
+    animation: marqueeReverse 5s linear infinite;
+   
 }
 
 /* Custom Components */
