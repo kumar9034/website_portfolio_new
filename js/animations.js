@@ -172,7 +172,7 @@ window.gsapAnimations = gsapAnimations;
 window.reinitializeAnimations = reinitializeAnimations;
 
 // EmailJS Initialization
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("iWsXv6gFNxSm2K2KP");
 
 // Contact Form Submit
 const contactForm = document.getElementById("contact-form");
@@ -185,8 +185,8 @@ contactForm.addEventListener("submit", function (e) {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
     emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_26rwidj",
+        "template_32ifp21",
         "#contact-form"
     )
     .then(function () {
